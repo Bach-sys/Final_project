@@ -6,3 +6,12 @@
     list-style-type: none;
     color: aliceblue;
 }
+.body {
+margin-top: 90px;
+ height: 88vh;
+ border: solid 5px black;
+ background-color: red;
+}
+.img {
+    width: 200px;
+}
