@@ -1,17 +1,33 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
     color: aliceblue;
+    background:trea ;
 }
+
 .body {
-margin-top: 90px;
- height: 88vh;
- border: solid 5px black;
- background-color: red;
+    margin-top: 90px;
+    height: 88vh;
+    border: solid 5px black;
+    background-image: linear-gradient(to left,#0F2027,#203A43,#2C5364);
 }
+
 .img {
-    width: 200px;
+    width: 20%;
+    display: block;
+    object-fit: cover;
+    object-position: left center;
+}
+
+.img-body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-div{
+    width: fit-content;
+    height: fit-content;
 }
