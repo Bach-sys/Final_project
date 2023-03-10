@@ -1,27 +1,34 @@
 var button = document.getElementById("submition")
-button.addEventListener("click",
-function collectData (){
+button.addEventListener("click",() => {
     var check = false;
     var user = document.getElementById("username").value;
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
+    var comfirmPass = document.getElementById("compassword").value;
     var invalid = ["!","@","#","$","%","^","&","*","(",")"];
-    for(let i = 0 ; i < invalid.length; i++){
-        if (user.include(invalid[i])){
-            if (email.include("@")){
-                
-        }else {
-                check = false
+    if (comfirmPass == password){
+        if(email.include("@")){
+            check = true
+        } else {
+            check = false ;
         }
-        }
-        check = true ;
     }
     
-    
-        
-    
+    console.log(check);
     console.log(user);
     console.log(email);
     console.log(password);
-}
-)
+} )
+
+
+// function collectData (){
+//     var check = false;
+//     var user = document.getElementById("username").value;
+//     var email = document.getElementById("email").value;
+//     var password = document.getElementById("password").value;
+//     var comfirmPass = document.getElementById("compassword").value;
+//     var invalid = ["!","@","#","$","%","^","&","*","(",")"];
+//     console.log(user);
+//     console.log(email);
+//     console.log(password);
+// }
