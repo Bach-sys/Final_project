@@ -1,5 +1,6 @@
 var button = document.getElementById("submition");
-button.addEventListener("click", () => {
+button.addEventListener("click", (e) => {
+  e.preventDefault();
   var check = false;
   var user = document.getElementById("username").value;
   var email = document.getElementById("email").value;
@@ -8,10 +9,28 @@ button.addEventListener("click", () => {
   var invalid = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"];
   var emailvalid = ["@"];
 
-  if (email != "" && password != "" && user != "" && comfirmPass != "") {
+  if (
+    email != "" &&
+    password != "" &&
+    user != "" &&
+    comfirmPass != "" &&
+    password == comfirmPass
+  ) {
     localStorage.setItem("user", user);
     localStorage.setItem("password", password);
     location.href = "/home/index.html";
+
+    // if (email.indexOf("@")) {
+    //   for (let i = 0; i <= invalid.length; i++) {
+    //     if (user.indexOf(i)) {
+    //       console.log("invalid user");
+    //     } else {
+    //       location.href = "/home/index.html";
+    //     }
+    //   }
+    // } else {
+    //   console.log("invalid user");
+    // }
   }
 
   //   if (comfirmPass == password) {
