@@ -18,6 +18,7 @@ button.addEventListener("click", (e) => {
   ) {
     localStorage.setItem("user", user);
     localStorage.setItem("password", password);
+    localStorage.setItem("email",email)
     location.href = "/home/index.html";
 
     // if (email.indexOf("@")) {
