@@ -63,3 +63,10 @@ let takeDetails = () => {
   console.log(details);
   document.getElementById("staticBackdropLabel").innerHTML = details;
 };
+
+function signUp() {
+  location.href = "/signIn_signUp/signUp.html"
+}
+function signIn() {
+  location.href = "/signIn_signUp/signIn.html"
+}
