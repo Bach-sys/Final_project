@@ -44,8 +44,8 @@ fetch(url)
                 <img class="tag-img" src="${imgUrl}" alt="">
                 <div class="content">
                     <ul class="infomation">
-                        <li class="birth">${data.metadata.birthdate}</li>
-                        <li class="country">${data.metadata.country}</li>
+                        <li class="birth">Born : ${data.metadata.birthdate}</li>
+                        <li class="country">Country : ${data.metadata.country}</li>
                         <div class="scrollAble">
                             <li class="dcrs">${data.description}</li>
                         </div> 
