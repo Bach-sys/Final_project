@@ -1,94 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:ital,wght@0,300;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:ital,wght@0,300;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter&family=Great+Vibes&family=Lobster+Two:ital@1&family=Phudu&display=swap");
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none;
-    color: aliceblue;
-    background:trea ;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  color: aliceblue;
+  background: trea;
+  overflow-x: hidden;
 }
 
 
+nav .navbar-brand {
+  font-size: 30px !important;
+}
+.navbar-brand {
+  font-family: "Great Vibes", cursive;
+  font-weight: bold;
+  color: #0f2027;
+}
+
 .body {
-    border-radius: 20px;
-    height: fit-content;
-    background-image: linear-gradient(0deg,#0F2027,#203A43,#2C5364);
-    padding: 50px;
+  border-radius: 20px;
+  height: fit-content;
+  background-image: linear-gradient(0deg, #0f2027, #203a43, #2c5364);
+  padding: 50px;
 }
 
 .img {
-    width: 30%;
-    border-radius: 10px;
-    display: block;
-    object-fit: cover;
-    object-position: left center;
-    box-shadow: 5px 10px 8px #d1d8e0 , 14px 16px 8px #535c68  ;
-} 
+  width: 30%;
+  border-radius: 10px;
+  display: block;
+  object-fit: cover;
+  object-position: left center;
+  box-shadow: 5px 10px 8px #d1d8e0, 14px 16px 8px #535c68;
+}
 
 .img-body {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
-.img-div{
-    width: fit-content;
-    height: fit-content;
+.img-div {
+  width: fit-content;
+  height: fit-content;
 }
 .content {
-    margin-top :20px ;
-    font-family:Roboto ;
-    border: solid 2px #535c68;
-    border-radius: 10px;
-    box-shadow: 4px 3px 10px greenyellow   ;
-    padding: 10px;
-    background-image: linear-gradient(to right,#159957,#155799,transparent);
+  margin-top: 20px;
+  font-family: Roboto;
+  border: solid 2px #535c68;
+  border-radius: 10px;
+  box-shadow: 4px 3px 10px greenyellow;
+  padding: 10px;
+  background-image: linear-gradient(to right, #159957, #155799, transparent);
 }
 
 h2 {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .border-gradient {
-    border-radius: 20px;
-    margin-top: 90px;
-    padding : 10px;
-    background-image: linear-gradient(270deg,#1a2a6c ,#b21f1f );
+  border-radius: 20px;
+  margin-top: 90px;
+  padding: 10px;
+  background-image: linear-gradient(270deg, #1a2a6c, #b21f1f);
 }
 .footerDetails li{
   color: #0F2027;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-right: 10px;
+  white-space: nowrap;
 }
-.footerDetails {
-    font-family: 'Roboto Condensed', sans-serif;
-    margin-bottom: 0px!important;
-    height: 40vh;
-    margin-top: 100px;
-    background-image: linear-gradient(to top ,#283c86 ,#45a247,#fff);
-    display: flex;
-    gap: 10px;
-    justify-content: center;
+.footerDetails{
+  display: flex;
+  margin-top: 20px;
+}
+  .Footer{
+    color: #0F2027;
+    padding: 90px;
+    background-image: linear-gradient(to bottom,#fff ,#C9D6DF,#52616B,#1E2022);
+    display : flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    
 }
+
 .footerDetails li a{
     color: #0F2027;
   }
 
-
 .button-35 {
-  width: 7%!important;
+  width: 7% !important;
   margin-right: 30px !important ;
-  height:50px!important;
+  height: 50px !important;
   align-items: center;
   background-color: #fff;
   border-radius: 12px;
-  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 2px;
+  box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.1) 0 6px 2px;
   box-sizing: border-box;
   color: #121212;
   cursor: pointer;
   display: inline-flex;
-  font-family: Inter,sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 10px;
   font-weight: bold;
   justify-content: center;
@@ -98,7 +113,7 @@ h2 {
   padding: 5px;
   text-align: center;
   text-decoration: none;
-  transition: box-shadow .2s,-webkit-box-shadow .2s;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
   white-space: nowrap;
   border: 0;
   user-select: none;
@@ -110,24 +125,24 @@ h2 {
   box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
 }
 
-.second-title{
-    text-decoration: underline  dotted red ;
+.second-title {
+  text-decoration: underline dotted red;
 }
 
-.email-user{
-    color: #0F2027;
+.email-user {
+  color: #0f2027;
 }
-
 
 .delete_account {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: 1px solid #222222;
   border-radius: 8px;
   box-sizing: border-box;
   color: #222222;
   cursor: pointer;
   display: inline-block;
-  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
@@ -138,7 +153,8 @@ h2 {
   text-align: center;
   text-decoration: none;
   touch-action: manipulation;
-  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
+    transform 0.1s;
   user-select: none;
   -webkit-user-select: none;
   width: auto;
@@ -146,18 +162,41 @@ h2 {
 
 .delete_account:focus-visible {
   box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
-  transition: box-shadow .2s;
+  transition: box-shadow 0.2s;
 }
 
 .delete_account:active {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   border-color: #000000;
-  transform: scale(.96);
+  transform: scale(0.96);
 }
 
 .delete_account:disabled {
-  border-color: #DDDDDD;
-  color: #DDDDDD;
+  border-color: #dddddd;
+  color: #dddddd;
   cursor: not-allowed;
   opacity: 1;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8a8a8ad4; 
 }
