@@ -1,4 +1,3 @@
-let deletebtn = document.getElementById("delete");
 let user = localStorage.getItem("user");
 let email = localStorage.getItem("email");
 let password = localStorage.getItem("password");
@@ -8,16 +7,11 @@ console.log(password);
 
 function checkValue() {
   if (localStorage.getItem("user") == null) {
-    deletebtn.style.display = "none";
     hTitle.style.display = "none";
     document.getElementsByClassName("button-35")[0].style.display = "block";
     document.getElementsByClassName("button-35")[1].style.display = "block";
   } else {
-    deletebtn.style.display = "block";
     hTitle.style.display = "block";
-    document.querySelector(
-      ".email-user"
-    ).innerHTML += `Username: ${user} | Email: ${email} `;
     document.getElementsByClassName("button-35")[0].style.display = "none";
     document.getElementsByClassName("button-35")[1].style.display = "none";
   }
