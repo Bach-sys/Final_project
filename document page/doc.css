@@ -8,7 +8,6 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
-    color: aliceblue;
     overflow-x: hidden;
 }
 nav .navbar-brand{
@@ -144,4 +143,8 @@ nav .navbar-brand{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #8a8a8ad4; 
+}
+
+.Title-tag{
+  overflow-y: hidden;
 }

@@ -33,3 +33,7 @@ function signIn() {
 function signUp() {
   location.href = "/signIn_signUp/signIn.html";
 }
+let btnaccount = document.getElementById("account")
+ btnaccount.addEventListener("click",function(){
+  location.href = "/accouunt page/index.html"
+ })

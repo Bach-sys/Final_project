@@ -38,15 +38,35 @@ button.addEventListener("click", (e) => {
       email != "" &&
       password != "" &&
       user != "" &&
-      comfirmPass != "" &&
-      password == comfirmPass
+      comfirmPass != "" 
     ) {
-      n++;
-      localStorage.setItem("user", user);
-      localStorage.setItem("password", password);
-      localStorage.setItem("email", email);
-      location.href = "/home/index.html";
-      console.log(n);
+      if(
+        password == comfirmPass
+        ){
+          let isemail = email.includes("@")
+          if(
+            email.length > 8 && isemail == true
+          ){
+            if(
+              user.length > 8 
+            ){
+              localStorage.setItem("user", user);
+            localStorage.setItem("password", password);
+            localStorage.setItem("email", email);
+            location.href = "/home/index.html";
+            console.log(n);
+            }
+            else {
+              alert("username quá ngắn ")
+            }
+          }
+          else {
+            alert("email kko tồn tại")
+          }
+        }
+        else {
+          alert("mật khẩu và xác nhận mật khẩu khôgn khớp")
+        }
     } else {
       alert("hãy điền đầy đủ thông tin");
     }

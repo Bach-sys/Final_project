@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Thay đổi ảnh bằng ảnh trong laptop</title>
+</head>
+<body>
+  <input type="file" id="imageUpload">
+  <br>
+  <img id="imagePreview" src="" alt="Hình ảnh xem trước">
+  
+  <script>
+    const imageUpload = document.getElementById("imageUpload");
+    const imagePreview = document.getElementById("imagePreview");
+
+    imageUpload.addEventListener("change", function() {
+      const file = this.files[0];
+      const reader = new FileReader();
+      
+      reader.addEventListener("load", function() {
+        imagePreview.src = reader.result;
+      }, false);
+      
+      if (file) {
+        reader.readAsDataURL(file);
+      }
+    });
+  </script>
+</body>
+</html>

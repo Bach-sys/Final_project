@@ -95,3 +95,13 @@
 #hellobtn{
   margin-top: 10px;
 }
+
+input {
+  padding: 2px;
+  border: #121212 solid 2px;
+  border-radius: 5px;
+  color: #000;
+  font-weight:bold ;
+  height: 2rem;
+  font-family: 'Amaranth', sans-serif;
+}
